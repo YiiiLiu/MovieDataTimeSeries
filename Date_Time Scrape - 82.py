@@ -2,7 +2,6 @@ import os
 import re
 import pandas as pd
 
-##add_date_and_time_columns('/Users/sammi/Desktop/20181204', '/Users/sammi/Desktop/20181204 - Result')
 
 def extract_date(file_name):
     # Use regular expression to capture date in the format YYYY-MM-DD
