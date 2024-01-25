@@ -1,5 +1,5 @@
 ## Movie Rating Data
-We begin by cleaning the movie rating data, where we've identified numerical inconsistencies across the dataset. The number of entries varies with some datasets containing 79, 80, or 82 records. Additionally, we've noticed discrepancies in column names that actually represent the same data across various file despite their different labels. These might be due to the change of the IMBD website. 
+We begin by cleaning the movie rating data, where we've identified numerical inconsistencies across the dataset. The number of entries varies with some datasets containing 79, 80, or 82 records. Additionally, we've noticed discrepancies in column names that actually represent the same data across various file despite their different labels. These might be due to the change of the IMBD website. We have total of 23717 datasets. 82 has 3928, 80 has 19500, 79 has 287, 60 has 2.
 
 ### Findings
 For detailed column information, please refer to Column Mapping.xlsx. Essentailly, using dataset with 82 file as a base, the changes we have are:
@@ -17,6 +17,10 @@ For detailed column information, please refer to Column Mapping.xlsx. Essentaill
 Same changes as 80 but with additional column Rating Votes Females under 18 (N_F_U18) missing.
 
 After the renaming all the columns, we scrape the date and time when the rating was scrape from the webpage on the data set file name. Next is to separate the time vary columns and the time invary columns. Then we consolidate all the data we have into one large data set, then keep the unique one for later use.
+
+#### 60 Columns
+
+
 
 
 ## Advertisement Data
