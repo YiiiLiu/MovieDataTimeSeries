@@ -18,7 +18,7 @@ For detailed column information, please refer to Column Mapping.xlsx. Essentaill
 #### 79 Columns
 Same changes as 80 but with additional column Rating Votes Females under 18 (N_F_U18) missing.
 
-After the renaming all the columns. What we do next is to separate the time vary columns and the time invary columns. Then we consolidate all the data we have into one large data set, then keep the unique one for later use.
+After the renaming all the columns, we scrape the date and time when the rating was scrape from the webpage on the data set file name. Next is to separate the time vary columns and the time invary columns. Then we consolidate all the data we have into one large data set, then keep the unique one for later use.
 
 
 ## Advertisement Data
