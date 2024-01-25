@@ -2,7 +2,7 @@
 We begin by cleaning the movie rating data, where we've identified numerical inconsistencies across the dataset. The number of entries varies with some datasets containing 79, 80, or 82 records. Additionally, we've noticed discrepancies in column names that actually represent the same data across various file despite their different labels. These might be due to the change of the IMBD website. 
 
 ### Findings
-For detailed column information, please refer to Column Mapping.xlsx. Essentailly, using dataset with 82 file as based, the changes we have are:
+For detailed column information, please refer to Column Mapping.xlsx. Essentailly, using dataset with 82 file as a base, the changes we have are:
 
 #### 80 Columns
 * Missing Rating Average IMDb staff (M_RATING_STAFF ) and Rating Votes IMDb staff (N_RATING_STAFF).
