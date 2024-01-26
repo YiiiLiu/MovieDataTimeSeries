@@ -19,6 +19,7 @@ For detailed column information, please refer to Column Mapping.xlsx. Essentaill
 #### 60 Columns
 * Missing all the Demo columns
 * Rating Votes IMDb staff and Rating Votes Males under 18 are also missing.
+
 Datasets: 2018-04-02 00.00.00 and 2018-07-29 19.00.00. A note about this is that they are all the days with few data being scraped. 2018-04-02 we only have one, 2018-07-29 we only have three. 
 
 ### Next Step
