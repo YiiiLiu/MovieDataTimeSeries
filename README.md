@@ -1,4 +1,4 @@
-## Movie Rating Data
+# Movie Rating Data
 The data were scraped from the IMBD website hourly. We begin by cleaning the movie rating data, where we've identified numerical inconsistencies across the dataset. The number of entries varies with some datasets containing 60, 79, 80, or 82 records. Additionally, we've noticed discrepancies in column names that actually represent the same data across various file despite their different labels. These might be due to the change of the IMBD website. We have total of 23717 datasets. 82 has 3928, 80 has 19500, 79 has 287, 60 has 2.
 
 ### Findings on Column Inconsistency
@@ -29,7 +29,9 @@ Datasets: 2018-04-02 00.00.00 and 2018-07-29 19.00.00. A note about this is that
 ### Next Step
 After identifying these inconsistencies, we proceeded to extract the date and time of when the ratings were scraped, using the dataset filenames as our source. Then, we renamed all the columns for clarity and separate them into two categories: 'time vary' and 'time invary' columns. Time vary columns contain ratings that changes across the dataset. In contrast, time invary columns has data that remain consistent throughout the dataset, meaning that for the same movie in different datasets, this information stays the same, like link or title. Our goal is to drop the duplicate rows while preserving unique entries identified by their IMDB_ID and TITLE for in-depth future analysis. 
 
-## Advertisement Data
+## Checklist
+
+# Advertisement Data
 First we have the data set contains information on the following:
 * CATEGORY
 * PRODUCT - Movie name, some are promotion video. 
@@ -41,7 +43,9 @@ What we do next is to join another matching data set that contains PRODUCT and t
 
 Then we transpose the week information (from wider dataset to longer dataset) for future analysis. 
 
-
+## Checklist
+- [ ] More check on the IMBD_ID for the Matching file.
+- [ ] Look at the $0 on the advertisement dataset.
 
 
 
