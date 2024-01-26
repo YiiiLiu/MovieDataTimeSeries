@@ -13,11 +13,15 @@ For detailed column information, please refer to Column Mapping.xlsx. Essentaill
 * Rating Votes Top 1000 voters should be Rating Votes US users (N_US).
 * Rating Votes US users should be Rating Votes Non-US users (N_NUS).
 
+Dataset: From 2018-05-25 05.00.00 to 2020-09-17 19.42.23. 
+
 #### 79 Columns
 * Same changes as 80 but with additional column Rating Votes Females under 18 (N_F_U18) missing.
 
+Dataset: 2020-05-22 18.00.00 and from 2020-06-01 00.00.00 to 2020-06-12 21.00.00.
+
 #### 60 Columns
-* Missing all the Demo columns
+* Missing all the Demo columns.
 * Rating Votes IMDb staff and Rating Votes Males under 18 are also missing.
 
 Datasets: 2018-04-02 00.00.00 and 2018-07-29 19.00.00. A note about this is that they are all the days with few data being scraped. 2018-04-02 we only have one, 2018-07-29 we only have three. 
