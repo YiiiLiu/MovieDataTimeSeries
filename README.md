@@ -14,11 +14,16 @@ For detailed column information, please refer to Column Mapping.xlsx. Essentaill
 * Rating Votes US users should be Rating Votes Non-US users (N_NUS).
 
 #### 79 Columns
-Same changes as 80 but with additional column Rating Votes Females under 18 (N_F_U18) missing.
+* Same changes as 80 but with additional column Rating Votes Females under 18 (N_F_U18) missing.
+
+#### 60 Columns
+* Missing all the Demo columns
+* Rating Votes IMDb staff and Rating Votes Males under 18 are also missing.
 
 After the renaming all the columns, we scrape the date and time when the rating was scrape from the webpage on the data set file name. Next is to separate the time vary columns and the time invary columns. Then we consolidate all the data we have into one large data set, then keep the unique one for later use.
 
-#### 60 Columns
+
+
 
 
 
