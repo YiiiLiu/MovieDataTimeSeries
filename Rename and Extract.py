@@ -15,7 +15,7 @@ def extract_time(file_name):
             return part.replace('.', ':')
     return None
 
-# Function to add date and time columns to files in a directory
+# Function to add date and time columns to files in a directory, this code vary depend on where your datasets are saved.
 def add_date_and_time_columns(directory, output_folder_name):
     desktop_path = os.path.join(os.path.expanduser('/Users/sammi'), 'Desktop', output_folder_name)
     os.makedirs(desktop_path, exist_ok=True)
@@ -48,7 +48,7 @@ def extract_and_save_columns(input_file, output_file, columns_to_extract):
     extracted_df = df[columns_to_extract]
     extracted_df.to_csv(output_file, index=False)
 
-# Column mapping dictionary
+# Column mapping dictionary, this one is for 82 columns dataset. This vary if you are dealing dataset with different column number.
 column_mapping = {
     '.Chain URL' : 'CHAIN_URL',
     '.Source URL': 'SOURCE_URL',
