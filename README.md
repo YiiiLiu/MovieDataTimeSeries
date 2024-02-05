@@ -1,5 +1,5 @@
 # Movie Rating Data
-The data were scraped from the IMBD website hourly. We begin by cleaning the movie rating data, where we've identified numerical inconsistencies across the dataset. The number of entries varies with some datasets containing 60, 79, 80, or 82 records. Additionally, we've noticed discrepancies in column names that actually represent the same data across various file despite their different labels. These might be due to the change of the IMBD website. We have total of 23717 datasets. 82 has 3928, 80 has 19500, 79 has 287, 60 has 2.
+The data were scraped from the IMBD website hourly. We begin by cleaning the movie rating data, where we've identified numerical inconsistencies across the dataset. The number of variables varies with some datasets containing 60, 79, 80, or 82 variables. Additionally, we've noticed discrepancies in column names that actually represent the same data across various file despite their different labels. These might be due to the change of the IMBD website. We have total of 23717 datasets. 82 has 3928, 80 has 19500, 79 has 287, 60 has 2.
 
 ### Findings on Column Inconsistency
 For detailed column information, please refer to Column Mapping.xlsx. Essentailly, using dataset with 82 as a base, the changes we have are:
