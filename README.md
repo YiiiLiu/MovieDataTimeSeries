@@ -29,9 +29,8 @@ Datasets: 2018-04-02 00.00.00 and 2018-07-29 19.00.00. A note about this is that
 ### Next Step
 After identifying these inconsistencies, we proceeded to extract the date and time of when the ratings were scraped, using the dataset filenames as our source. Then, we renamed all the columns for clarity and separate them into two categories: 'time vary' and 'time invary' columns. Time vary columns contain ratings that changes across the dataset. In contrast, time invary columns has data that remain consistent throughout the dataset, meaning that for the same movie in different datasets, this information stays the same, like link or title. Our goal is to drop the duplicate rows while preserving unique entries identified by their IMDB_ID and TITLE for in-depth future analysis. 
 
-## Checklist
 
-# Matching Dataet
+# Matching Dataset
 This dataset contains all movies from Advertising Data and their correspond IMDB_ID.
 * PRODUCT - Movie name, some are promotion video.
 * First Week - First week of advertisement
