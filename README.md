@@ -57,12 +57,7 @@ Here are what has been done on the dataset:
 4. Create a new variable (Relative_Week) that capture the relative value of release week and advertising weeks. So if the release date is the same week as the advertising week, the value will be 0. If the release date of the week is before advertising week, the value will be 1. If the release date of the week is after advertising week, the value will be -1....etc.
 5. Create tow new variables : total spending up to and include Week 0 (Total_Spent_W0) and total spending up to and include week 1 (Total_Spent_W1).
 
-
-## Checklist
-- [ ] Look at the $0 on the advertisement dataset.
-- [ ] So far we ignore the NA weeks in order to inspect output, we might need to look more into this after.
-
-Result data:
+Result dataframe:
 * IMDB_ID 
 * PRODUCT - Movie name, some are promotion video
 * MEDIA - The way movie was advertise
@@ -72,6 +67,11 @@ Result data:
 * Relative_Week - Contains relative value between Release date of week and advertising week.
 * Total_Spent_W0 - Total dollar spent up to Week 0 (from the Relative_Week column)
 * Total_Spent_W1 - Total dollar spent up to Week 1 (from the Relative_Week column)
+
+## Checklist
+- [ ] Look at the $0 on the advertisement dataset.
+- [ ] So far we ignore the NA weeks in order to inspect output, we might need to look more into this after.
+
 
 
 # Boxing Office Data
