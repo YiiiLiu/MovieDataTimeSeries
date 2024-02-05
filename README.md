@@ -31,21 +31,52 @@ After identifying these inconsistencies, we proceeded to extract the date and ti
 
 ## Checklist
 
+# Matching Dataet
+This dataset contains all movies from Advertising Data and their correspond IMDB_ID.
+* PRODUCT - Movie name, some are promotion video.
+* First Week - First week of advertisement
+* Last Week - Last week of advertisement
+* IMDB_ID
+* Comments - These are the comments to the IMDB_ID. Since the match was done manualy, there are some notes for some of the movie.
+
+There are total of 4624 rows for this dataset. 
+
 # Advertisement Data
 First we have the data set contains information on the following:
 * CATEGORY
 * PRODUCT - Movie name, some are promotion video. 
 * MEDIA - The way movie was advertise
 * TOTAL DOLS - Total dollar spent on advertisement (sum of all week)
-* WK ..... - Contains the money spend on advertisement for the week from 2016 August to 2020 April.
+* WK ..... - Contains the dollar spend on advertisement for each week from 2016 August to 2020 April.
 
-What we do next is to join another matching data set that contains PRODUCT and their IMBD_ID. Join the two dataset based on PRODUCT. Then we have the advertisement dataset with IMDB_ID. Some does not have ID because they are promotion video, they are not on IMDB. 
+There is total of 14134 rows for the data.
 
-Then we transpose the week information (from wider dataset to longer dataset) for future analysis. 
+Here are what has been done on the dataset:
+1. Join another matching data set that contains PRODUCT and their correspond IMBD_ID. Join the two dataset based on PRODUCT. Then we have the advertisement dataset with IMDB_ID. Some does not have ID because they are promotion video, they are not on IMDB. 
+2. Transpose the week and spending information (from wider dataset to longer dataset) that prepare for future analysis.
+3. Join the release date column (BOMJ_RELEASE_DAYBO) from Boxing Office Data to the Advertising Data. So
+4. Create a new variable (Relative_Week) that capture the relative value of release week and advertising weeks. So if the release date is the same week as the advertising week, the value will be 0. If the release date of the week is before advertising week, the value will be 1. If the release date of the week is after advertising week, the value will be -1....etc.
+5. Create tow new variables : total spending up to and include Week 0 (Total_Spent_W0) and total spending up to and include week 1 (Total_Spent_W1).
+
 
 ## Checklist
-- [ ] More check on the IMBD_ID for the Matching file.
 - [ ] Look at the $0 on the advertisement dataset.
+- [ ] So far we ignore the NA weeks in order to inspect output, we might need to look more into this after.
+
+Result data:
+* IMDB_ID 
+* PRODUCT - Movie name, some are promotion video
+* MEDIA - The way movie was advertise
+* WEEK - The week that movie was promoted (All Monday)
+* MoneySpent - Dollar Spent on advertising for each week
+* BOMJ_RELEASE_DAYBO - Release date of the movie (Not consistent in terms of day of week)
+* Relative_Week - Contains relative value between Release date of week and advertising week.
+* Total_Spent_W0 - Total dollar spent up to Week 0 (from the Relative_Week column)
+* Total_Spent_W1 - Total dollar spent up to Week 1 (from the Relative_Week column)
+
+
+# Boxing Office Data
+This dataset contains the information on release data of the dataset.
 
 
 
